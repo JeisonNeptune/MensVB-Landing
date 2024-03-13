@@ -39,29 +39,130 @@ ul {
     margin: 0px;
     padding: 0px;
     gap: 8px;
+
+    font-weight: 400;
   }
-  
-  .intro{
-    background-color:#1F2937;
-    color: #f9faf8;
+
+  .header img {
+    max-width: 700px;
+    height: auto;
     display: flex;
-    height: 200px;
+    justify-content: center;
     align-items: center;
+    margin: 100px;
+    flex: 1 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.576) 0px 20px 30px -10px;   
+}
 
+.header h1 {
+  font-size: 58px;
+  font-weight: bolder;
+  color:#fff;
+  line-height: 1;
+}
 
+.header p {
+  color:#fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.header .button {
+  background-color: #3B82F6;
+  color:#fff;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 25px;
+  align-self: flex-start;
+  font-size: 18px;
+}
+
+.header .button:hover {
+  cursor:cell;
+  background-color: #2959a4;
+}
+
+.header .container {
+  background: rgb(31,41,55);
+  background: linear-gradient(315deg, rgba(31,41,55,1) 56%, rgba(49,59,73,1) 100%); 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 100px;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .header .container {
+      flex-direction: column;
+      padding-top: 100px;
+      text-align: center;
   }
+
+  .header .title {
+      width: 80%;
+      margin-bottom: 0;
+  }
+
+  .header .button {
+      align-self: center;
+  }
+
+  .header img {
+      width: 95%;
+      margin: 50px auto 100px auto;
+  }
+}
+  /*
+  .intro{
+     background: rgb(31,41,55);
+    background: linear-gradient(315deg, rgba(31,41,55,1) 56%, rgba(49,59,73,1) 100%); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+ .column{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 100px;
+    gap: 1rem;
+ }
+ 
   .info.top {
-    flex: 1;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: bolder;
-    justify-self: flex-end;
+    color:#fff;
+    line-height: 1;
    
 
   }
 
   .info.body {
-
-    flex: 1;
-
-
+    color:#fff;
+    font-weight: 300;
+    font-size: 18px;
+    
   }
+
+  .img {
+    max-height: 50%;
+    min-width: 50%;
+    object-fit:scale-down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    flex: 1 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.576) 0px 20px 30px -10px;   
+}
+*/
